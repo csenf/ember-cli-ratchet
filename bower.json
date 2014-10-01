@@ -1,0 +1,6 @@
+{
+  "name": "ember-cli-ratchet",
+  "dependencies": {
+    "ratchet": "~2.0.2"
+  }
+}
