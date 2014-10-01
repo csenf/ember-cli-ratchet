@@ -18,7 +18,9 @@ module.exports = {
         }
 
         // Import javascript files
-        app.import(path.join(ratchetPath, 'js/ratchet.js'));
+        if (options.importRatchetJs) {
+            app.import(path.join(ratchetPath, 'js/ratchet.js'));
+        }
 
         // Import glyphicons
         app.import(path.join(ratchetPath, 'fonts/ratchicons.eot'), { destDir: '/fonts' });

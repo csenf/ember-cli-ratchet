@@ -20,9 +20,9 @@ npm install --save-dev ember-cli-ratchet
 
 You should now have access to the ratchet styles and scripts.
 
-
-
 ## Importing specific theme from Ratchet
+
+Ratchet comes with two themes, ios and android. You may configure, which theme to include in your app.
 
 ```javascript
 //your-ratchet-app/Brocfile.js
@@ -34,6 +34,26 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 var app = new EmberApp({
   'ember-cli-ratchet': {
     'theme': 'ios'
+  }
+});
+
+module.exports = app.toTree();
+```
+
+## Importing ratchet.js
+
+You can optionally import the ratchet JavaScript library.
+
+```javascript
+//your-ratchet-app/Brocfile.js
+
+/* global require, module */
+
+var EmberApp = require('ember-cli/lib/broccoli/ember-app');
+
+var app = new EmberApp({
+  'ember-cli-ratchet': {
+    'importRatchetJs': true
   }
 });
 
