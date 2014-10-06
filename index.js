@@ -19,7 +19,11 @@ module.exports = {
 
         // Import javascript files
         if (options.importRatchetJs) {
-            app.import(path.join(ratchetPath, 'js/ratchet.js'));
+            app.import('vendor/ratchet/js/modals.js');
+            app.import('vendor/ratchet/js/popovers.js');
+            app.import('vendor/ratchet/js/segmented-controllers.js');
+            app.import('vendor/ratchet/js/sliders.js');
+            app.import('vendor/ratchet/js/toggles.js');
         }
 
         // Import glyphicons
