@@ -59,3 +59,20 @@ var app = new EmberApp({
 
 module.exports = app.toTree();
 ```
+
+### JavaScript - Components
+Per default all available JavaScript - Files are imported. Optionally you can select some components.
+
+```javascript
+//your-ratchet-app/Brocfile.js
+
+/* global require, module */
+
+var EmberApp = require('ember-cli/lib/broccoli/ember-app');
+
+var app = new EmberApp({
+  'ember-cli-ratchet': {
+    'jsComponents': ['toggles', 'sliders']
+  }
+});
+```
