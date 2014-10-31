@@ -1,7 +1,7 @@
 {
     "name": "ember-cli-ratchet",
     "description": "Include ratchet into an ember-cli app",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "author": "Carsten Senf",
     "main": "index.js",
     "scripts": {

@@ -8,7 +8,7 @@ module.exports = {
 
         var options = app.options['ember-cli-ratchet'] || {};
         var modulePath = path.relative(app.project.root, __dirname);
-        var ratchetPath = 'vendor/ratchet/';
+        var ratchetPath = 'bower_components/ratchet/';
         var cssPath = path.join(ratchetPath, 'dist/css')
         var javascriptsPath = path.join(ratchetPath, 'js');
 
